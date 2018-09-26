@@ -8,6 +8,7 @@ body , html{
 }
 body {
     font-family: 'Open Sans', sans-serif;
+	    background-color: #2a2c32;
 }
 
  #wrapper {
@@ -259,6 +260,83 @@ background-color: #FFF;
 	
 }
 .navbar-side footer p{font-size:70%;}
+
+.nav-tab {
+	background:#0f9fea;
+	padding-top:22px;
+}
+
+.nav-tab ul {
+  display: flex;
+  padding: 0;
+  margin: 0px 15px;
+  list-style: none;
+}
+.nav-tab li {
+  flex: 1 0 auto;
+  margin: 0px 15px;
+  position:relative;
+}
+.nav-tab ul a {
+  display: block;
+  padding: 0.7em 1em;
+  color: #fff;
+  text-decoration: none;
+  text-align: center;
+  background:#6fc6f3;
+}
+.nav-tab ul a.active, .nav-tab ul a:hover{
+	background:#f1f0ed;
+	color:#848382;
+} 
+.msg-badge{
+	background: #ff0000;
+    color: #fff;
+    font-weight: 600;
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    padding: 1px 5px;
+    font-size: 12px;
+}
+.drop-single {
+	margin:15px 30px;
+}
+.drop-single.ml0{
+	margin-left:0px;
+}
+.drop-single.ml0 a{
+	color:#333;
+	
+}
+.drop-single a{
+	color:#fff;
+	box-shadow:none !important;
+	cursor:pointer;
+}
+.inner-pages{display:flex; height: auto !important}
+.inner-pages .navbar-header{
+	height:70px;
+	background:#fff;
+}
+.inner-pages  .sidebar-collapse{
+	margin-top:70px;
+}
+.inner-pages  .navbar-side{
+	height:auto;
+	position:relative;
+	
+}
+.inner-pages   #page-wrapper{
+	padding:0px;
+	background: #f1f0ed;
+	width: calc(100% - 260px);
+	margin-left:0px;
+}
+.inner-pages #page-inner {
+    overflow: hidden;
+	    margin: 10px 20px 0px 0px;
+	}
 /*----------------------------------------------
     Section   
 ------------------------------------------------*/
@@ -315,6 +393,36 @@ display: block;
 padding-top: 14px;
 font-size: 19px;
 }
+}
+
+
+
+@media screen and (max-width: 36em){
+  .nav-tab  ul {
+    flex-flow: wrap;
+    align-items: stretch;
+  }
+  .nav-tab  ul li {
+    flex-basis: 33%;
+    display: flex;
+    flex-direction: column;
+  }
+ .nav-tab  ul a {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 22em){
+   .nav-tab  ul li {
+    flex-basis: 50%;
+  }
+}
+@media screen and (max-width: 16em){
+   .nav-tab  ul {
+    flex-direction: column;
+  }
 }
 
 
